@@ -43,11 +43,28 @@ nav img {
   position: relative;
   top: 35px;
   left: 0px;
+
+  
 }
 a {
   margin: 3px 15px;
+  text-decoration: none;
 } /* fin de las navegacion*/
 
+/* estilos con git*/
+.foto2 img:hover {
+  transform: translate(20px, -15px);
+  cursor: pointer;
+  transition: transform 3s; }
+  nav img:hover{
+    transition: transform 3s;
+    transform: rotateY(60deg);
+    transform-style: preserve-3d;
+  
+  }
+nav{
+  background-image: linear-gradient(to bottom right, rgb(66, 10, 221), rgb(175, 194, 247))
+}
 /*body*/
 h1 {
   margin: 50px 80px;
@@ -81,11 +98,8 @@ h1 {
   height: 100%;
   object-fit: cover;
 }
-.foto2 img:hover {
-  transform: translate(20px, -15px);
-  cursor: pointer;
-  transition: transform 3s;
-}
+
+
 .section1 {
   display: flex;
 }
