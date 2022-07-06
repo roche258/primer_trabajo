@@ -55,46 +55,39 @@
         </div>
       </nav>
     
-    <div class="foto4">
-        <img src="/repo/fotos/JRO_2647.jpg" alt="">
-    </div>
-    <main class="formu">
-        <!-- inicia formularii -->
-        <form action="envio.php" id="reservar"> 
-            <fieldset>
-                <legend> info personal</legend>
-                <label for="name">nombre</label>
-                <input type="text" id="name" placeholder="joaquin">
-                <br>
-                <label for="email">email</label>
-                <input type="email" id="email" placeholder="mail@algo.com">
-            </fieldset>
-            <fieldset>
-                <legend>tipo de servicios</legend>
-                <label for="servicio 15">fotos para tus 15</label>
-                <input type="checkbox" id=" book 15" value="servicion 15">
-                <br>
-                <label for="servicio casamiento"> fotos para tu casamiento</label>
-                <input type="checkbox" id="book casamiento" value="servicio casamiento">
-            </fieldset>
-            <fieldset>
-                <legend> enviar informacion por</legend>
-                <label for="email1">envio por email</label>
-                <input type="radio"id="email1" name="enviar" value="correo">
-                <br>
-                <label for="whatsap"> envio por whatsap</label>
-                <input type="radio"id="whatsap" name="enviar" value="whatsap">
-            </fieldset>
-            <label for="mensajes">mensajes</label>
-            <br>
-            <textarea name="" id="mensajes" cols="30" rows="10"></textarea>
-            <br>
-            <input type="reset" value="cancelar">
-            <input type="submit" value="enviar"
-        </form>
-        <section></section>
-        <!-- termina formulario -->
-    </main>
+    
+   <section class="py-3">
+      <div class="container-fluid">
+
+    
+               <h3> contacto</h3>
+       <div class="row">
+         <article class="col-sm12 col-md-12 col-lg-8 ">
+             <form class="w-100">
+               <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+               </div>
+               <div class="mb-3">
+                 <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+               <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+               </div>
+               <button type="submit" class="btn btn-primary">Submit</button>
+             </form>
+           </article>
+           <article class="col-sm12 col-md-12 col-lg-4">
+             <img src="/repo/fotos/JRO_2647.jpg" alt="" class="w-100 img-thumbnail">
+           </article>
+        
+        </div>
+
+      </div>
+   </section>
     <section class="mapa">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107066.8583288583!2d-58.618473411290104!3d-33
         .008011382371684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95baa828f3333543%3A0xa95f93d6a79497c1!2zR3V
@@ -119,6 +112,8 @@
                <img src="/repo/fotos/whatsap.jpg" alt="">
             </a>
       </footer>
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
 </body>
 </html>

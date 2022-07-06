@@ -3,13 +3,59 @@
   font-size: small;
   padding: 0;
   margin: 0;
-} 
+}
 /* X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap*/
+.roche-fotografia-grid {
+  width: 99%;
+  display: grid;
+  background-color: rgb(253, 253, 253);
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "nav"
+  "medio"
+  "barra"
+  "quince"
+  "boda"
+  "bau"
+  "pibe"
+    "pie";
+}
 
+#nav {
+  grid-area: nav;
+  top: 0;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#barra {
+  grid-area: barra;
+}
+#tabla {
+  grid-area: medio;
+}
+#quince {
+  grid-area: quince;
+}
+#pie {
+  grid-area: pie;
+}
+#boda {
+  grid-area: boda;
+}
+#bautismo {
+  grid-area: bau;
+}
+#colegio {
+  grid-area: pibe;
+}
 /*/ Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { 
-  .grid {
+@media (min-width: 576px) {
+  .roche-fotografia-grid {
     width: 99%;
     display: grid;
     background-color: rgb(253, 253, 253);
@@ -23,38 +69,39 @@
       "boda"
       "bau"
       "pibe"
-      "pie"; }
-      #nav {
-        grid-area: nav;
-        
-        top: 0;
-        padding: 10px 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-      #barra {
-        grid-area: barra;
-      }
-      #tabla {
-        grid-area: medio;
-      }
-      #quince {
-        grid-area: quince;
-      }
-      #pie {
-        grid-area: pie;
-      }
-      #boda {
-        grid-area: boda;
-      }
-      #bautismo {
-        grid-area: bau;
-      }
-      #colegio {
-        grid-area: pibe;
-      }}
+      "pie";
+  }
+  #nav {
+    grid-area: nav;
+    top: 0;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #barra {
+    grid-area: barra;
+  }
+  #tabla {
+    grid-area: medio;
+  }
+  #quince {
+    grid-area: quince;
+  }
+  #pie {
+    grid-area: pie;
+  }
+  #boda {
+    grid-area: boda;
+  }
+  #bautismo {
+    grid-area: bau;
+  }
+  #colegio {
+    grid-area: pibe;
+  }
+}
 
 /*/ Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
@@ -70,13 +117,14 @@
   }
   #nav {
     grid-area: nav;
-    
+
     top: 0;
   }
-  }
+}
 
 /*/ Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {  }
+@media (min-width: 992px) {
+}
 
 /*/ X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
@@ -95,14 +143,13 @@
   #nav {
     flex-direction: row;
   }
-  }
+}
 
 /*/ XX-Large devices (larger desktops, 1400px and up)*/
 
-
 /* navegacion para los 5 paginas*/
 .barra-navegacion {
-  height: 240px;;
+  height: 240px;
   background-color: blue;
 }
 nav {
@@ -123,8 +170,6 @@ nav img {
   position: relative;
   top: 35px;
   left: 0px;
-
-  
 }
 a {
   margin: 3px 15px;
@@ -135,18 +180,26 @@ a {
 .foto2 img:hover {
   transform: translate(20px, -15px);
   cursor: pointer;
-  transition: transform 3s; }
-  nav img:hover{
-    transition: transform 3s;
-    transform: rotateY(60deg);
-    transform-style: preserve-3d;
-  
-  }
-nav{
-  background-image: linear-gradient(to bottom right, rgb(66, 10, 221), rgb(175, 194, 247))
+  transition: transform 3s;
 }
-.barra-botones{
-  background-image: linear-gradient(to bottom right, rgb(66, 10, 221), rgb(175, 194, 247))
+nav img:hover {
+  transition: transform 3s;
+  transform: rotateY(60deg);
+  transform-style: preserve-3d;
+}
+nav {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(66, 10, 221),
+    rgb(175, 194, 247)
+  );
+}
+.barra-botones {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(66, 10, 221),
+    rgb(175, 194, 247)
+  );
 }
 /*body*/
 h1 {
@@ -181,7 +234,6 @@ h1 {
   height: 100%;
   object-fit: cover;
 }
-
 
 .section1 {
   display: flex;
@@ -283,19 +335,18 @@ form {
 
 /* servicios con grid*/
 .pag3 {
-  height: 100%;
+  height: 99%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    "nav3"
+    "nav33"
     "aside3"
-    "foto3"
+    "foto33"
     "pie3";
 }
 .nav3 {
-  grid-area: nav3;
-  
+  grid-area: nav33;
   top: 0;
   padding: 10px 30px;
   display: flex;
@@ -303,11 +354,12 @@ form {
   align-items: center;
   justify-content: center;
 }
+
 .navegacion3 {
   grid-area: aside3;
 }
 .fotos3 {
-  grid-area: foto3;
+  grid-area: foto33;
 }
 .pie3 {
   grid-area: pie3;
@@ -318,13 +370,14 @@ form {
     grid-template-columns: 40% 60%;
     grid-template-rows: auto;
     grid-template-areas:
-      "nav3 nav3"
-      "aside3 foto3"
+      "nav33 nav33"
+      "aside3 foto33"
       "pie3 pie3";
   }
   .fotos3 {
     display: flex;
     flex-direction: row;
+    height: 600px;
   }
 }
 /*pantalla grande 1024*/
@@ -333,8 +386,8 @@ form {
     grid-template-columns: 40% 60%;
     grid-template-rows: auto;
     grid-template-areas:
-      "nav3 nav3 "
-      "aside3 foto3"
+      "nav33 nav33 "
+      "aside3 foto33"
       "pie3 pie3";
   }
 
